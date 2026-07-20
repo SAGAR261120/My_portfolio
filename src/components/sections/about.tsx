@@ -24,7 +24,7 @@ export function AboutSection() {
           >
             <div className="flex items-center gap-4">
               <PortfolioImage
-                src="/images/profile.jpg"
+                src="/images/profile.png"
                 alt={siteConfig.name}
                 width={88}
                 height={88}
