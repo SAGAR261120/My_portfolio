@@ -32,7 +32,7 @@ jobs:
 
       - name: Build static site
         env:
-          DEPLOY_TARGET: gh-pages
+          NEXT_PUBLIC_BASE_PATH: /My_portfolio
           NEXT_PUBLIC_SITE_URL: https://sagar261120.github.io/My_portfolio
         run: npm run build
 

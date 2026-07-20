@@ -1,12 +1,11 @@
 import type { NextConfig } from "next";
 
-const isGhPages = process.env.DEPLOY_TARGET === "gh-pages";
-const repoName = "My_portfolio";
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const nextConfig: NextConfig = {
   output: "export",
-  basePath: isGhPages ? `/${repoName}` : undefined,
-  assetPrefix: isGhPages ? `/${repoName}/` : undefined,
+  basePath: basePath || undefined,
+  assetPrefix: basePath ? `${basePath}/` : undefined,
   images: {
     unoptimized: true,
   },

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
@@ -8,6 +7,7 @@ import { projects } from "@/lib/data";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { Button } from "@/components/ui/button";
 import { GitHubIcon } from "@/components/shared/social-icons";
+import { PortfolioImage } from "@/components/shared/portfolio-image";
 
 export function ProjectsSection() {
   return (
@@ -30,12 +30,11 @@ export function ProjectsSection() {
               className="glass-card group flex flex-col overflow-hidden transition hover:border-cyan-400/30"
             >
               <div className="relative aspect-[16/10] overflow-hidden">
-                <Image
+                <PortfolioImage
                   src={project.image}
                   alt={project.title}
                   fill
                   className="object-cover transition duration-500 group-hover:scale-105"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 to-transparent" />
               </div>

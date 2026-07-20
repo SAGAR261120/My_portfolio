@@ -1,9 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { about, siteConfig } from "@/lib/data";
 import { SectionHeading } from "@/components/shared/section-heading";
+import { PortfolioImage } from "@/components/shared/portfolio-image";
 
 export function AboutSection() {
   return (
@@ -23,7 +23,7 @@ export function AboutSection() {
             className="glass-card relative overflow-hidden p-6"
           >
             <div className="flex items-center gap-4">
-              <Image
+              <PortfolioImage
                 src="/images/profile.jpg"
                 alt={siteConfig.name}
                 width={88}

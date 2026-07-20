@@ -1,12 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { GraduationCap, Award } from "lucide-react";
 import { certifications, education } from "@/lib/data";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { Button } from "@/components/ui/button";
+import { PortfolioImage } from "@/components/shared/portfolio-image";
 
 export function EducationSection() {
   return (
@@ -52,7 +52,7 @@ export function EducationSection() {
             {certifications.map((cert) => (
               <div key={cert.title} className="glass-card overflow-hidden p-4">
                 <div className="relative mx-auto aspect-[4/3] w-full max-w-[220px]">
-                  <Image
+                  <PortfolioImage
                     src={cert.image}
                     alt={cert.title}
                     fill

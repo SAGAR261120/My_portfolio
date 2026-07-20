@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Download, Mail, ArrowDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ParticleField } from "@/components/effects/particle-field";
 import { GitHubIcon, LinkedInIcon } from "@/components/shared/social-icons";
+import { PortfolioImage } from "@/components/shared/portfolio-image";
 import { siteConfig, typingTexts } from "@/lib/data";
 
 export function HeroSection() {
@@ -114,7 +114,7 @@ export function HeroSection() {
         >
           <div className="absolute -inset-4 rounded-full bg-cyan-400/20 blur-3xl" />
           <div className="relative overflow-hidden rounded-full border border-cyan-400/30 bg-white/5 p-2 shadow-[0_0_60px_rgba(34,211,238,0.2)] backdrop-blur-xl">
-            <Image
+            <PortfolioImage
               src="/images/profile.jpg"
               alt={siteConfig.name}
               width={420}

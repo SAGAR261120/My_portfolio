@@ -11,11 +11,10 @@ Modern personal portfolio built with **Next.js (App Router)**, **TypeScript**, *
 ## Features
 
 - Futuristic dark UI with glassmorphism, particles, and smooth motion
-- Sections: Hero, About, Skills, Stats, Experience, Projects, Education, Services, GitHub, Contact
+- Sections: Hero, About, Skills, Stats, Experience, Projects, Education, Services, Contact
 - Theme switcher (dark by default)
 - Command palette (`Ctrl/Cmd + K`)
 - Contact form via email client (`mailto:`)
-- Live GitHub repos / stars / languages (fetched at build time)
 - SEO: metadata, Open Graph, sitemap, robots.txt
 - Blog placeholder at `/blog`
 
