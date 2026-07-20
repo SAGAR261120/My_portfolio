@@ -17,49 +17,28 @@ export function ContactSection() {
   const [message, setMessage] = useState("");
   const [copied, setCopied] = useState(false);
 
-  async function onSubmit(e: FormEvent<HTMLFormElement>) {
+  function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
-    const payload = {
-      name: String(data.get("name") || ""),
-      email: String(data.get("email") || ""),
-      subject: String(data.get("subject") || ""),
-      message: String(data.get("message") || ""),
-    };
+    const name = String(data.get("name") || "");
+    const email = String(data.get("email") || "");
+    const subject = String(data.get("subject") || "Portfolio inquiry");
+    const message = String(data.get("message") || "");
 
     setStatus("loading");
     setMessage("");
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      const json = (await res.json()) as {
-        ok: boolean;
-        mode?: string;
-        error?: string;
-      };
-
-      if (!res.ok || !json.ok) {
-        throw new Error(json.error || "Failed to send");
-      }
-
-      if (json.mode === "mailto") {
-        const body = encodeURIComponent(
-          `Name: ${payload.name}\nEmail: ${payload.email}\n\n${payload.message}`,
-        );
-        window.location.href = `mailto:${siteConfig.email}?subject=${encodeURIComponent(payload.subject || "Portfolio inquiry")}&body=${body}`;
-        setMessage(
-          "Opening your email client. You can also copy my email below.",
-        );
-      } else {
-        setMessage("Message sent successfully. I will get back to you soon.");
-        form.reset();
-      }
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\n${message}`,
+      );
+      window.location.href = `mailto:${siteConfig.email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+      setMessage(
+        "Opening your email client. You can also copy my email below.",
+      );
       setStatus("success");
+      form.reset();
     } catch {
       setStatus("error");
       setMessage("Something went wrong. Please email me directly.");

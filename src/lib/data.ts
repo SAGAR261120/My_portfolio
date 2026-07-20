@@ -14,7 +14,7 @@ export const siteConfig = {
   linkedin: "https://www.linkedin.com/in/sagar-sengar-688a52230/",
   url:
     process.env.NEXT_PUBLIC_SITE_URL ||
-    "https://sagar-sengar-portfolio.vercel.app",
+    "https://sagar261120.github.io/My_portfolio",
   yearsExperience: 3,
   projectsCompleted: 8,
   hostedProjects: 5,

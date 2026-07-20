@@ -90,7 +90,12 @@ export function GitHubSection({
               <div className="mt-4 flex items-center justify-between text-xs text-slate-500">
                 <span>{repo.language || "N/A"}</span>
                 <span>
-                  Updated {new Date(repo.updated_at).toLocaleDateString()}
+                  Updated{" "}
+                  {new Date(repo.updated_at).toLocaleDateString("en-GB", {
+                    day: "2-digit",
+                    month: "short",
+                    year: "numeric",
+                  })}
                 </span>
               </div>
             </motion.a>

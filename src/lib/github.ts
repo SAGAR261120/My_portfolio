@@ -30,11 +30,11 @@ export async function fetchGitHubData(username: string) {
   const [userRes, reposRes] = await Promise.all([
     fetch(`https://api.github.com/users/${username}`, {
       headers,
-      next: { revalidate: 3600 },
+      cache: "force-cache",
     }),
     fetch(
       `https://api.github.com/users/${username}/repos?sort=updated&per_page=12`,
-      { headers, next: { revalidate: 3600 } },
+      { headers, cache: "force-cache" },
     ),
   ]);
 
