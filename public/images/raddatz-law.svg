@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="750" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0B1B33"/>
+      <stop offset="1" stop-color="#16365C"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect x="80" y="90" width="1040" height="570" rx="28" fill="#102744" stroke="#2F5F96" stroke-width="2"/>
+  <circle cx="180" cy="200" r="42" fill="#C9A227"/>
+  <path d="M180 172 L196 228 H164 L180 172Z" fill="#0B1B33"/>
+  <text x="250" y="195" fill="#F4F7FB" font-family="Arial, sans-serif" font-size="48" font-weight="700">Raddatz Law</text>
+  <text x="250" y="245" fill="#9BB6D6" font-family="Arial, sans-serif" font-size="26">Legal Practice Management</text>
+  <rect x="120" y="320" width="280" height="24" rx="8" fill="#1C3A61"/>
+  <rect x="120" y="370" width="420" height="24" rx="8" fill="#1C3A61"/>
+  <rect x="120" y="420" width="360" height="24" rx="8" fill="#1C3A61"/>
+  <rect x="120" y="500" width="200" height="52" rx="12" fill="#C9A227"/>
+  <text x="155" y="533" fill="#0B1B33" font-family="Arial, sans-serif" font-size="22" font-weight="700">Sign In</text>
+</svg>

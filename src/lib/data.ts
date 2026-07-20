@@ -16,8 +16,8 @@ export const siteConfig = {
     process.env.NEXT_PUBLIC_SITE_URL ||
     "https://sagar261120.github.io/My_portfolio",
   yearsExperience: 3,
-  projectsCompleted: 8,
-  hostedProjects: 5,
+  projectsCompleted: 10,
+  hostedProjects: 6,
 };
 
 export const typingTexts = [
@@ -43,19 +43,19 @@ export const navLinks = [
 
 export const about = {
   summary:
-    "MERN stack developer with 3+ years of professional experience building scalable web and mobile applications. Currently at Skyestone AI Tech Pvt Ltd, with prior roles at Pranam Creative Solutions and Persist IT Solutions delivering products across healthcare, logistics, and billing. Strong foundation in React, Next.js, React Native, Node.js, and MongoDB — focused on clean UI/UX, reusable architecture, and production-ready delivery.",
+    "MERN Stack Developer with experience building responsive, scalable web and mobile applications using MongoDB, Express.js, React.js, and Node.js. Skilled across frontend and backend with Next.js, TypeScript, and React Native — developing user-friendly interfaces, REST APIs, and database-backed features while collaborating in Agile teams to deliver high-quality solutions.",
   highlights: [
-    "3+ years shipping production React & React Native apps",
-    "End-to-end MERN ownership: UI, APIs, and MongoDB",
-    "Healthcare, billing, and logistics domain experience",
-    "MCA (2024) & BCA (2022) from G.H. Raisoni University",
+    "3+ years shipping production React, React Native & Node.js apps",
+    "Led frontend teams and mentored juniors at Pranam Creative Solutions",
+    "Healthcare (ABDM/PHR), billing, legal tech & asset-tracking domains",
+    "MCA (7.18 CGPA) & BCA from G.H. Raisoni University",
   ],
   profile: [
     { label: "Profile", value: "MERN Stack Developer" },
     { label: "Domain", value: "Web & Mobile Application Development" },
     { label: "Education", value: "MCA · Master of Computer Applications" },
     { label: "Languages", value: "English, Hindi, Marathi" },
-    { label: "Tools", value: "Git, GitHub, VS Code" },
+    { label: "Tools", value: "Git, GitHub, VS Code, AWS" },
     { label: "Interests", value: "Traveling, Trading" },
   ],
 };
@@ -78,14 +78,18 @@ export const skillCategories = [
   {
     title: "Backend",
     skills: [
-      { name: "Node.js", level: 75 },
-      { name: "Express.js", level: 75 },
-      { name: "REST APIs", level: 80 },
+      { name: "Node.js", level: 80 },
+      { name: "Express.js", level: 80 },
+      { name: "REST APIs", level: 85 },
+      { name: "Socket.IO", level: 75 },
     ],
   },
   {
-    title: "Database",
-    skills: [{ name: "MongoDB", level: 75 }],
+    title: "Database & Cloud",
+    skills: [
+      { name: "MongoDB", level: 75 },
+      { name: "AWS (S3, EC2, CloudWatch)", level: 70 },
+    ],
   },
   {
     title: "Mobile",
@@ -101,7 +105,7 @@ export const experience = [
   {
     company: "Skyestone AI Tech Pvt Ltd",
     role: "MERN Stack Developer",
-    period: "2025 — Present",
+    period: "Dec 2025 — Present",
     current: true,
     location: "India",
     description:
@@ -114,40 +118,42 @@ export const experience = [
   },
   {
     company: "Pranam Creative Solutions Pvt Ltd",
-    role: "MERN Stack Developer · React JS / React Native",
-    period: "Nov 2023 — 2025",
+    role: "Sr. React JS · React Native · Node.js Developer",
+    period: "Nov 2023 — Nov 2025",
     current: false,
     location: "India",
     description:
-      "Led UI development for Sclyte, a hospital management platform — reusable React components, Material UI, Bootstrap, and React Native modules for clinical and admin workflows.",
+      "Led frontend development for healthcare and enterprise products — mentoring juniors, shipping reusable React/TypeScript UI, and collaborating with backend and product teams in Agile sprints.",
     achievements: [
-      "Built modular React UI for patient, appointment, and resource management",
-      "Improved UI/UX for cross-device clinical and administrative tasks",
-      "Delivered responsive, maintainable components used across Sclyte modules",
+      "Led the front-end team and mentored junior developers",
+      "Designed reusable UI components with React JS, TypeScript, and Material UI",
+      "Built responsive apps with REST API integration and cross-browser performance",
+      "Delivered clean, documented code and participated in daily scrums",
     ],
   },
   {
-    company: "Persist IT Solutions",
-    role: "MERN Stack Developer · React / Node.js",
+    company: "Persist I.T. Solutions Pvt Ltd",
+    role: "React JS Developer",
     period: "Jan 2023 — Oct 2023",
     current: false,
     location: "India",
     description:
-      "Developed Kwick Bill, an advanced billing and resource management system spanning React frontend and Node.js / Express backend with GST, roles, and inventory flows.",
+      "Built dynamic React interfaces and contributed to Node.js/Express APIs for billing and business platforms, with AWS deployment support and Agile delivery.",
     achievements: [
-      "Built full-stack billing modules with React, Node.js, and Express",
-      "Implemented GST calculations, multi-user roles, and invoice workflows",
-      "Added real-time location tracking and responsive cross-device UI",
+      "Developed interactive UIs with React JS, Bootstrap, and Material UI",
+      "Integrated REST APIs with hooks, Context API, forms, and state management",
+      "Built Express middleware/APIs and used AWS S3, EC2, and CloudWatch",
+      "Followed GitFlow, code reviews, and sprint-based delivery",
     ],
   },
   {
-    company: "Softronix IT Solutions",
-    role: "Front-End Web Developer (Intern)",
-    period: "Jul 2022 — Dec 2022",
+    company: "Softronix I.T. Solution Pvt Ltd",
+    role: "React JS Developer (Intern)",
+    period: "2022",
     current: false,
     location: "India",
     description:
-      "Six-month React JS internship focused on real-world responsive interfaces and collaboration with the development team.",
+      "React JS internship focused on real-world responsive interfaces and collaboration with the development team.",
     achievements: [
       "Built dynamic React components for production web projects",
       "Structured pages with HTML5, CSS3, and Bootstrap",
@@ -158,12 +164,43 @@ export const experience = [
 
 export const projects = [
   {
+    title: "Raddatz Law — Legal Practice Management",
+    subtitle: "React JS · Legal Tech",
+    description:
+      "Legal practice management web application for law firm operations — secure authentication, account access, and practice workflows for administrators and staff.",
+    image: "/images/raddatz-law.svg",
+    tech: ["React JS", "TypeScript", "REST APIs", "Node.js"],
+    liveUrl: "https://app.raddatz-law.com/",
+    githubUrl: "https://github.com/SAGAR261120",
+    note: null,
+  },
+  {
+    title: "White Tail — Location & Asset Tracking",
+    subtitle: "Full Stack · Mapbox · Socket.IO",
+    description:
+      "Real-time location and asset tracking platform with Mapbox maps, live pins/markers, Socket.IO updates, role-based admin panel, and secure REST APIs on Node.js, Express, and MongoDB.",
+    image: "/images/white-tail.svg",
+    tech: [
+      "React JS",
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "Mapbox",
+      "Socket.IO",
+      "TypeScript",
+      "AWS",
+    ],
+    liveUrl: null,
+    githubUrl: "https://github.com/SAGAR261120",
+    note: null,
+  },
+  {
     title: "Sclyte — Hospital Management",
     subtitle: "React JS · Healthcare",
     description:
-      "Comprehensive hospital management software for patients, appointments, doctors, GST billing, and invoice printing — built with reusable React components and a responsive admin experience.",
+      "Hospital management system for patients, appointments, and resources — reusable React UI with Material UI, Bootstrap, and Reactstrap, plus responsive UX across devices.",
     image: "/images/SmartCare_dashboard.png",
-    tech: ["React JS", "Material UI", "Bootstrap", "Reactstrap"],
+    tech: ["React JS", "Material UI", "Bootstrap", "Reactstrap", "JavaScript"],
     liveUrl: "https://airbnb-project-by6x.onrender.com/listings",
     githubUrl: "https://github.com/SAGAR261120",
     note: "Login credentials required — contact me for access.",
@@ -181,29 +218,58 @@ export const projects = [
   },
   {
     title: "Kwick Bill — Billing Software",
-    subtitle: "React JS + Node.js",
+    subtitle: "React JS + Node.js + AWS",
     description:
-      "Feature-rich billing and invoicing system for customers, products, discounts, GST, reports, and downloadable invoices with an intuitive dashboard.",
+      "Billing and invoicing platform with GST/tax handling, multi-user roles, payments, reports, live location tracking, and responsive web + React Native web-view experiences.",
     image: "/images/KwickBill.png",
-    tech: ["React JS", "Node.js", "Express.js", "MongoDB"],
+    tech: [
+      "React JS",
+      "React Native",
+      "Node.js",
+      "Express.js",
+      "TypeScript",
+      "AWS",
+    ],
     liveUrl: null,
     githubUrl: "https://github.com/SAGAR261120",
     note: null,
+  },
+  {
+    title: "ABDM — Ayushman Bharat Digital Mission",
+    subtitle: "React JS · Government of India",
+    description:
+      "Contributed to ABDM digital health ecosystem — ABHA Health ID creation, patient verification, consent management, HIP/HIU workflows, and secure record linking per national protocols.",
+    image: "/images/SmartCare_dashboard.png",
+    tech: ["React JS", "JavaScript", "REST APIs", "TypeScript", "Material UI"],
+    liveUrl: null,
+    githubUrl: "https://github.com/SAGAR261120",
+    note: "Government of India digital health project.",
+  },
+  {
+    title: "PHR — Personal Health Record Integration",
+    subtitle: "React Native + Node.js · NDHM",
+    description:
+      "NDHM PHR integration for secure medical records, lab reports, and prescriptions — Node.js middleware for auth/encryption and React Native flows for health data linking and verification.",
+    image: "/images/patientPortal.png",
+    tech: ["React Native", "Node.js", "Express.js", "REST APIs"],
+    liveUrl: null,
+    githubUrl: "https://github.com/SAGAR261120",
+    note: "National Digital Health Mission initiative.",
   },
 ];
 
 export const education = [
   {
     degree: "MCA — Master of Computer Applications",
-    school: "G.H. Raisoni Institute of Information Technology",
+    school: "G.H. Raisoni University",
     period: "2022 — 2024",
-    score: "75.00%",
+    score: "7.18 CGPA",
   },
   {
     degree: "BCA — Bachelor of Computer Applications",
     school: "G.H. Raisoni Institute of Information Technology",
     period: "2019 — 2022",
-    score: "70.59%",
+    score: "Completed",
   },
 ];
 
